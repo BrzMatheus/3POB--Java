@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class idadeDias{
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite a sua idade");
+        int idade = entrada.nextInt();
+       
+        int resultado= idade*365;
+        
+      
+            System.out.println("a sua idade em diasé :" + resultado);
+       
+
+        entrada.close();
+    }
+}
+
