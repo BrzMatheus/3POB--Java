@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class media{
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite o primeiro numero ");
+        int numero1 = entrada.nextInt();
+             System.out.print("Digite o segundo numero");
+        int numero2 = entrada.nextInt();
+             System.out.print("Digite o terceiro numero");
+        int numero3 = entrada.nextInt();
+       
+        double media= (numero1 + numero2 + numero3)/3.0;
+        
+      
+            System.out.println("a media é :" + media);
+       
+
+        entrada.close();
+    }
+}
