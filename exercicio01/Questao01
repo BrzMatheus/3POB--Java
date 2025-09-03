@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class somaDois {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite seu primeiro numero: ");
+        int numero1 = entrada.nextInt();
+         System.out.print("Digite seu segundo numero: ");
+        int numero2 = entrada.nextInt();
+        int resultado= numero2+numero1;
+            System.out.println("a soma é :" + resultado);
+       
+
+        entrada.close();
+    }
+}
