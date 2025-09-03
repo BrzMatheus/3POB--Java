@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class desconto{
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite a seu salario");
+        double salario = entrada.nextDouble();
+        System.out.print("Digite a seu descontoInss");
+        double inss = entrada.nextDouble();
+       
+        double resultado= salario - inss;
+        
+      
+            System.out.println("a sua idade em diasé :" + resultado);
+       
+
+        entrada.close();
+    }
+}
+
