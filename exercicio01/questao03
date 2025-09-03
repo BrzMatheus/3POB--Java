@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class ConversaoTemperatura {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite a temperatura em celcius:");
+        int celcius = entrada.nextInt();
+       
+        double F = (celcius * 9/5) + 32;
+        
+      
+            System.out.println("a temperatura en farehant é :" + F);
+       
+
+        entrada.close();
+    }
+}
