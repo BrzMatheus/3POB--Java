@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class DistanciaPontos {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        // Solicita as coordenadas
+        System.out.print("Digite x1: ");
+        double x1 = entrada.nextDouble();
+
+        System.out.print("Digite y1: ");
+        double y1 = entrada.nextDouble();
+
+        System.out.print("Digite x2: ");
+        double x2 = entrada.nextDouble();
+
+        System.out.print("Digite y2: ");
+        double y2 = entrada.nextDouble();
+
+        double dx = x2 - x1;
+        double dy = y2 - y1;
+
+        double dx2 = dx * dx;
+        double dy2 = dy * dy;
+
+        double soma = dx2 + dy2;
+        double raiz = soma; // chute inicial
+        for (int i = 0; i < 10; i++) { 
+            raiz = 0.5 * (raiz + soma / raiz);
+        }
+
+        System.out.println("A distância entre os pontos é: " + raiz);
+
+        entrada.close();
+    }
+}
