@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int tabuada[] = new int[10];
+        int multiplcaçao = 0;
+        int i =0;
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite um numero: ");
+        int numero = entrada.nextInt();
+        while(i <10){
+            tabuada[i] = numero * i;
+            System.out.println(" " + numero + " " +tabuada[i]);
+            i++; 
+        }
+
+        entrada.close();
+    }
+}
