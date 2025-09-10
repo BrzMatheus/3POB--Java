@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Esfera {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite o raio da esfera: ");
+        double raio = entrada.nextDouble();
+
+        double pi = 3.14;
+
+        double raioCubo = raio * raio * raio;
+
+        double volume = (4.0 / 3.0) * pi * raioCubo;
+
+        System.out.println("O volume da esfera é: " + volume);
+
+        entrada.close();
+    }
+}
