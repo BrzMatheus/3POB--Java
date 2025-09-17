@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class NumerosPrimos {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite o início do intervalo: ");
+        int inicio = entrada.nextInt();
+
+        System.out.print("Digite o fim do intervalo: ");
+        int fim = entrada.nextInt();
+
+        System.out.println("Números primos entre " + inicio + " e " + fim + ":");
+
+        for (int num = inicio; num <= fim; num++) {
+            if (num > 1) { 
+                boolean primo = true;
+
+                for (int i = 2; i <= num / 2; i++) {
+                    if (num % i == 0) {
+                        primo = false;
+                        break; 
+                    }
+                }
+
+                if (primo) {
+                    System.out.print(num + " ");
+                }
+            }
+        }
+
+        entrada.close();
+    }
+}
