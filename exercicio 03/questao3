@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class ContagemRegressiva {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Digite um número inteiro positivo: ");
+        int numero = entrada.nextInt();
+
+        if (numero < 0) {
+            System.out.println("Por favor, digite apenas números inteiros positivos.");
+        } else {
+            do {
+                System.out.println(numero);
+                numero--; 
+            } while (numero >= 0); 
+        }
+
+        entrada.close();
+    }
+}
